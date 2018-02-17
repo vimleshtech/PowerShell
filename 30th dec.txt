@@ -1,0 +1,242 @@
+powershell - objective
+-------------------------
+environment
+-------------------------
+programing concept/basic/fundamentals
+-------------------------------
+variable
+-------------------------
+expression
+--------------------
+operator
+------------------
+condition 
+---------------------
+
+powershell - objective:
+-open source 
+-plateform independent 
+-automation 
+-application deployement
+-application /data recovery 
+----------------------
+db-prd1
+	-6:00 am   -  other server/backup server
+	-develop script
+	-shedule the script 
+
+environment
+--------------------
+-powershell console
+-poweshell ISE 
+-Editor/IDE:
+	-VSCode
+	-Visual studio
+	-Atom
+	-Sublime
+	etc.
+
+programing concept/basic/fundamentals
+-------------------------------
+extension of powershell script:
+		.ps1
+		$		- variable 	
+		F5: to run/exectue script (entire file)
+		F8: to run selected script 
+
+variable: is nothing, just a temp. memory where data can be stored
+--------------------
+123	= 321 
+
+$num = value/data/123
+//show data / print data 
+$num
+
+expression :
+---------------------------
+$num =123
+
+$n1=$num/100		    = 1
+$n2 = int($num/10)% 10     =  2   
+$n3 = $num%10		    = 3
+
+Operator:
+-------------------------------
+Arithmetic Operator:
+	+
+	-
+	*
+	/
+	%
+
+	Example:
+	2+3*4	= 14	
+	(2+3)*4	= 20			
+Conditional Operator:
+	-gt			: a>b
+	-lt
+	-eq
+
+Condition: decision making statement 
+------------------------------------
+-if condition
+---------------------
+Example 1: if else 
+	if condition
+	{
+		....true 
+
+	}
+	else
+	{
+		..false 
+	}
+Example 2: if condition 
+	sales_amt = 1000
+	if sales_amt>5000
+	{
+		....true 
+		sales_amt = sales_amt-(sales_amt *.02)
+
+	}
+
+	$sales_amt 
+	
+Example 3: if elseif .....................
+	if condition 
+	{
+			....true 
+	}
+	elseif condition
+	{
+		...
+	}
+	elseif condition 
+	{
+
+
+	}
+	elseif condition
+	{
+
+
+	}
+	else 
+	{
+		....
+	}
+-switch case 
+-----------------------------
+
+$product_quantity = Get-Host -Prompt "enter qunatity..."		
+$price    =
+
+
+$sale = ....
+
+condition :
+	if sales amount >  500000
+			12%
+	if sales amount >  10000	
+			10%
+	if sales amount >  50000
+			5%
+	if sales amount >  10000
+			2%
+	else 
+		no off
+	
+
+sales ... 	10000
+	
+condition :
+	if sales > 50000
+		gst : 18%
+	else 
+		gst : 5%
+
+10000+5%
+
+
+total sales amount
+
+
+---------------
+bit		
+byte	= 8 bit
+kb
+mb
+	
+short	:1 byte		=8bit
+byte	:2 byte		=14bit
+int	:4 byte		=32bit
+long	:8 byte		=64bit
+
+Int32: 232665
+Int64
+
+
+
+
+1
+0
+
+ASCII
+-------------------------------------------
+A - 65
+B - 66	
+a - 97
+b - 8 
+0 - 48 
+
+65/2 = 1
+32/2 = 0
+16/2 = 0
+8/2 = 0
+4/2 = 0
+2/2  = 0
+1
+
+A
+
+1000001100000110000011000001
+
+
+4 = 51
+4  = 51
+
+
+
+
+switch case
+--------------
+input :1 
+	
+
+1-5: monday / weekday 
+6-7: weekend / 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+	
