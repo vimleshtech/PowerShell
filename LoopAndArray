@@ -1,0 +1,90 @@
+## wap to show sum of all ements which present in array
+## wap to show all elements from array which is greter 
+#average value
+
+44,55,6443,32,22,2,2,2,23,343
+   500
+#loop
+ #types of loop
+ #i. for  : for($i=0; $i -le 10; $i++){ ... }
+ #ii. while:  $i= 1  while($i -le 10) {    .. $i++ }
+ #iii. do while : $i= 1  do {    .. $i++ }while($i -le 10)
+ #iv. do until : $i= 1  do {    .. $i++ }until($i -le 10)
+ #v. advance loop/for each  : for($item in $items) { }
+
+#array: is collection of data or values 
+      #:multiple values can be stored on single variable
+      #:array is also known as container 
+
+#syntax:
+$a = 1,2,3,2,"f"
+$a = @(1,2,3,2,"f")
+
+$a = @(111,2222,200113,222244)   
+#last index of array will be size/length-1
+#length of array will be last index+1
+
+#access array element 
+$a[2]
+$a[4]  # not allowed / out of index 
+
+$a.Length  # return count of elements
+
+for($i =1; $i -le 3; $i++){
+    $a[$i]
+}
+
+
+#function
+#file handling
+
+#loop:
+for($i=0; $i -le 10; $i++){
+
+    $i 
+}
+
+###nested loop : loop inside loop
+## r =1 ,c = 1 2 3 
+## r =2 ,c = 1 2 3 
+## r =3 ,c = 1 2 3 
+## r =4 ,c = 1 2 3 
+## r =5 ,c = 1 2 3 
+### print table 2 to 20 
+for($r=2; $r -le 20; $r++){
+
+    for($c=1; $c -le 10; $c++){
+          "$r * $c =" + $r*$c 
+    }
+
+}
+
+### while loop 
+$i= 1  
+while($i -le 10) {   
+ $i 
+ $i++  
+ }
+
+### while loop : nested while loop 
+
+$i= 2 
+while($i -le 20) {   
+
+  $c =1
+  while($c -le 10 ){
+
+            $c++
+  }
+
+ $i++  
+
+ }
+#do while  : will execute at least onece 
+$i =1
+do
+{
+
+  $i++
+}while($i -lt 1)
+
