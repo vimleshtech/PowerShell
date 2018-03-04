@@ -1,0 +1,38 @@
+insert into student1.book(isbn)
+select b1.isbn 
+from student2.book b1 left join student1.book b2
+	on b1.isbn = b2.isbn
+where b2.isbn is null 
+
+
+ 
+insert into student1.book_iteam(book_id,sal) 
+select b2.id,i.sal
+
+from student2.book b  inner join student2.book_iteam i
+    on b.id = i.book_id 
+ inner join student1.book b2 	
+ 		on b.isbn = b2.isbn 		 
+ left join student1.book_iteam i2  
+ 		on b2.id = i2.book_id 
+where i2.book_id is null 
+
+
+
+
+insert into student1.book_iteam(book_id)
+select b.id
+from student1.book b left join student1.book_iteam i
+	on b.id = i.book_id 
+where i.book_id is null 
+
+
+
+select b.id
+from book b left join book_iteam i
+	on b.id = i.book_id 
+where i.book_id is null 
+ 
+ 
+ delete from student1.book_iteam
+ where book_id > 4      
